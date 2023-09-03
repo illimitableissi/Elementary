@@ -19,27 +19,28 @@
             <div class="row">
                 <label for="teacher">Teacher Name:</label>
 
-                <select name="teacher" id="teacher">
-                <option value="Teacher 1">Teacher 1</option>
-                <option value="Teacher 2">Teacher 2</option>
-                <option value="Teacher 3">Teacher 3</option>
-                <option value="Teacher 4">Teacher 4</option>
+                <select name="teacher" id="teacher" class="form-control">
+                    <option value=""></option>
+                    <option value="Teacher 1">Teacher 1</option>
+                    <option value="Teacher 2">Teacher 2</option>
+                    <option value="Teacher 3">Teacher 3</option>
+                    <option value="Teacher 4">Teacher 4</option>
                 </select> 
             </div>
 
             <div class="row">
-                <label for="grade">Grade Level</label>
+                <label for="grade">Grade Level:</label>
                 <input type="text" class="form-control" id="grade" name="grade">
             </div>
 
 
             <div class="row">
-                <label for="date">Date</label>
+                <label for="date">Date:</label>
                 <input type="text" class="form-control" id="date" name="date">
             </div>
 
             <div class="row">
-                <label for="observer">Observer</label>
+                <label for="observer">Observer:</label>
                 <input type="text" class="form-control" id="observer" name="observer">
             </div>
 
@@ -53,7 +54,9 @@
                 <input type="text" class="form-control" id="portion" name="portion">
             </div>
 
-            <button id="start-button">Next</button>
+            <div class="row">
+            <button id="start-button" class="button">Next</button>
+            </div>
 
         </div>
     </section>
@@ -63,85 +66,129 @@
         <div class="row">
             <div class="col">
                 <form id="data" name="data">
+                    <p class="action-title">Teacher Clarity</p>
                     <div class="form-group">
                         <label>Teacher explicitly states and unpacks the learning target.</label>
-                        <input type="radio" class="form-control" id="question1yes" name="question1" value="Yes">
-                        <label for="question1yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question1no" name="question1" value="No">
-                        <label for="question1no">No</label>
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button" id="question1yes" name="question1" value="Yes">
+                            <label for="question1yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question1no" name="question1" value="No">
+                            <label for="question1no">No</label>
+                        </div>
                     </div>
                         <div class="form-group">
                         <label>Teacher models the instructional strategy/anchor chart aligned to the success criteria</label>
-                        <input type="radio" class="form-control" id="question2yes" name="question2" value="Yes">
-                        <label for="question2yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question2no" name="question2" value="No">
-                        <label for="question2no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question2yes" name="question2" value="Yes">
+                            <label for="question2yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question2no" name="question2" value="No">
+                            <label for="question2no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</label>
-                        <input type="radio" class="form-control" id="question3yes" name="question3" value="Yes">
-                        <label for="question3yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question3no" name="question3" value="No">
-                        <label for="question3no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question3yes" name="question3" value="Yes">
+                            <label for="question3yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question3no" name="question3" value="No">
+                            <label for="question3no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Teacher models total physical participation strategies and monitors student engagement at 100%.</label>
-                        <input type="radio" class="form-control" id="question4yes" name="question4" value="Yes">
-                        <label for="question4yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question4no" name="question4" value="No">
-                        <label for="question4no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question4yes" name="question4" value="Yes">
+                            <label for="question4yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question4no" name="question4" value="No">
+                            <label for="question4no">No</label>  
+                        </div>
                     </div>
+
+                    <p class="action-title">Student Agency</p>
+
                     <div class="form-group">
                         <label>Students utilize their “I Made It Tracker: to reflect on the learning for the day</label>
-                        <input type="radio" class="form-control" id="question5yes" name="question5" value="Yes">
-                        <label for="question5yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question5no" name="question5" value="No">
-                        <label for="question5no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question5yes" name="question5" value="Yes">
+                            <label for="question5yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question5no" name="question5" value="No">
+                            <label for="question5no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>All students complete the exit ticket.</label>
-                        <input type="radio" class="form-control" id="question6yes" name="question6" value="Yes">
-                        <label for="question6yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question6no" name="question6" value="No">
-                        <label for="question6no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question6yes" name="question6" value="Yes">
+                            <label for="question6yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question6no" name="question6" value="No">
+                            <label for="question6no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</label>
-                        <input type="radio" class="form-control" id="question7yes" name="question7" value="Yes">
-                        <label for="question7yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question7no" name="question7" value="No">
-                        <label for="question7no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question7yes" name="question7" value="Yes">
+                            <label for="question7yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question7no" name="question7" value="No">
+                            <label for="question7no">No</label>  
+                        </div>
                     </div>
+                    
+                    <p class="action-title">Assessment Strategy</p>
+
                     <div class="form-group">
                         <label>Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</label>
-                        <input type="radio" class="form-control" id="question8yes" name="question8" value="Yes">
-                        <label for="question8yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question8no" name="question8" value="No">
-                        <label for="question8no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question8yes" name="question8" value="Yes">
+                            <label for="question8yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question8no" name="question8" value="No">
+                            <label for="question8no">No</label>  
+                        </div>
+
                     </div>
                     <div class="form-group">
                         <label>K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</label>
-                        <input type="radio" class="form-control" id="question9yes" name="question9" value="Yes">
-                        <label for="question9yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question9no" name="question9" value="No">
-                        <label for="question9no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question9yes" name="question9" value="Yes">
+                            <label for="question9yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question9no" name="question9" value="No">
+                            <label for="question9no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Teacher provides the answer to the exit ticket and records the exit ticket data on board.</label>
-                        <input type="radio" class="form-control" id="question10yes" name="question10" value="Yes">
-                        <label for="question10yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question10no" name="question10" value="No">
-                        <label for="question10no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button"  id="question10yes" name="question10" value="Yes">
+                            <label for="question10yes">Yes</label>  
+                            <input type="radio" class="radio-button"  id="question10no" name="question10" value="No">
+                            <label for="question10no">No</label>  
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Teachers sort the exit ticket data to analyze trends in the learning.</label>
-                        <input type="radio" class="form-control" id="question11yes" name="question11" value="Yes">
-                        <label for="question11yes">Yes</label>  
-                        <input type="radio" class="form-control" id="question11no" name="question11" value="No">
-                        <label for="question11no">No</label>  
+
+                        <div class="radio-buttons">
+                            <input type="radio" class="radio-button" id="question11yes" name="question11" value="Yes">
+                            <label for="question11yes">Yes</label>  
+                            <input type="radio" class="radio-button" id="question11no" name="question11" value="No">
+                            <label for="question11no">No</label>  
+                        </div>
                     </div>
-                        <button id="back-button">Back</button>
-                        <button id="next-button">Next</button>
+
+                    <div class="data-buttons">
+                        <button id="back-button" class="button">Back</button>
+                        <button id="next-button" class="button">Next</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -168,8 +215,10 @@
                 </textarea> 
             </div>
 
-            <button id="data-button">Back</button>
-            <button id="submit-button">Submit</button>
+            <div class="data-buttons">
+                <button id="data-button" class="button">Back</button>
+                <button id="submit-button" class="button">Submit</button>
+            </div>
         </div>
 
     </section>
