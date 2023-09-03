@@ -10,6 +10,20 @@ label {
     text-align: center;
 }
 
+h1,p {
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: center;
+}
+
 .row {
     display: flex;
     justify-content: flex-end;
@@ -86,6 +100,7 @@ button {
 
 textarea {
     margin: 1rem 0;
+    width: 95%;
 }
 
 .summary{}
