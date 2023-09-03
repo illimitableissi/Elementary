@@ -1,8 +1,9 @@
 body {
-background: url("./logo.JPG");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background: url("./logo.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 label {
@@ -15,14 +16,19 @@ label {
     margin: 1rem 0;
 }
 
-.start{
+.col {
     display: flex;
-    width: 70%;
+    flex-direction: column;
+}
+
+.start, .data{
+    display: flex;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.start-container {
+.start-container, .data-container,.acc-container {
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,12 +39,6 @@ button {
     margin-top: 20px;
     height: 40px;
     width: 100px;
-}
-
-.data{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .form-control{
@@ -71,7 +71,7 @@ button {
 .data-buttons {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly
+    justify-content:space-evenly;
 }
 
 .data-button {
@@ -80,10 +80,28 @@ button {
 
 .accountability{}
 
+.text {
+    justify-content: center;
+}
+
+textarea {
+    margin: 1rem 0;
+}
+
 .summary{}
 
 .main-title {
     text-align: center;
+}
+
+@media all and (min-height: 800px){
+    
+/* .data-buttons {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 }
 
 
