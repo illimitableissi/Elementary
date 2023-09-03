@@ -53,7 +53,7 @@
                 <input type="text" class="form-control" id="portion" name="portion">
             </div>
 
-            <button type="submit" id="start-button">Next</button>
+            <button id="start-button">Next</button>
 
         </div>
     </section>
@@ -62,63 +62,86 @@
         <div class="data-container">
         <div class="row">
             <div class="col">
-                <form>
+                <form id="data" name="data">
                     <div class="form-group">
-                        <label for="question1">Teacher explicitly states and unpacks the learning target.</label>
-                        <input type="radio" class="form-control" id="question1" name="question1" value="Yes">
-                        <input type="radio" class="form-control" id="question1" name="question1" value="No">
+                        <label>Teacher explicitly states and unpacks the learning target.</label>
+                        <input type="radio" class="form-control" id="question1yes" name="question1" value="Yes">
+                        <label for="question1yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question1no" name="question1" value="No">
+                        <label for="question1no">No</label>
                     </div>
                         <div class="form-group">
-                        <label for="question2">Teacher models the instructional strategy/anchor chart aligned to the success criteria</label>
-                        <input type="radio" class="form-control" id="question2" name="question2" value="Yes">
-                        <input type="radio" class="form-control" id="question2" name="question2" value="No">
+                        <label>Teacher models the instructional strategy/anchor chart aligned to the success criteria</label>
+                        <input type="radio" class="form-control" id="question2yes" name="question2" value="Yes">
+                        <label for="question2yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question2no" name="question2" value="No">
+                        <label for="question2no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question3">Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</label>
-                        <input type="radio" class="form-control" id="question3" name="question3" value="Yes">
-                        <input type="radio" class="form-control" id="question3" name="question3" value="No">
+                        <label>Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</label>
+                        <input type="radio" class="form-control" id="question3yes" name="question3" value="Yes">
+                        <label for="question3yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question3no" name="question3" value="No">
+                        <label for="question3no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question4">Teacher models total physical participation strategies and monitors student engagement at 100%.</label>
-                        <input type="radio" class="form-control" id="question4" name="question4" value="Yes">
-                        <input type="radio" class="form-control" id="question4" name="question4" value="No">
+                        <label>Teacher models total physical participation strategies and monitors student engagement at 100%.</label>
+                        <input type="radio" class="form-control" id="question4yes" name="question4" value="Yes">
+                        <label for="question4yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question4no" name="question4" value="No">
+                        <label for="question4no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question5">Students utilize their “I Made It Tracker: to reflect on the learning for the day</label>
-                        <input type="radio" class="form-control" id="question5" name="question5" value="Yes">
-                        <input type="radio" class="form-control" id="question5" name="question5" value="No">
+                        <label>Students utilize their “I Made It Tracker: to reflect on the learning for the day</label>
+                        <input type="radio" class="form-control" id="question5yes" name="question5" value="Yes">
+                        <label for="question5yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question5no" name="question5" value="No">
+                        <label for="question5no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question6">All students complete the exit ticket.</label>
-                        <input type="radio" class="form-control" id="question6" name="question6" value="Yes">
-                        <input type="radio" class="form-control" id="question6" name="question6" value="No">
+                        <label>All students complete the exit ticket.</label>
+                        <input type="radio" class="form-control" id="question6yes" name="question6" value="Yes">
+                        <label for="question6yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question6no" name="question6" value="No">
+                        <label for="question6no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question7">Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</label>
-                        <input type="radio" class="form-control" id="question7" name="question7" value="Yes">
-                        <input type="radio" class="form-control" id="question7" name="question7" value="No">
+                        <label>Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</label>
+                        <input type="radio" class="form-control" id="question7yes" name="question7" value="Yes">
+                        <label for="question7yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question7no" name="question7" value="No">
+                        <label for="question7no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question8">Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</label>
-                        <input type="radio" class="form-control" id="question8" name="question8" value="Yes">
-                        <input type="radio" class="form-control" id="question8" name="question8" value="No">
+                        <label>Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</label>
+                        <input type="radio" class="form-control" id="question8yes" name="question8" value="Yes">
+                        <label for="question8yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question8no" name="question8" value="No">
+                        <label for="question8no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question9">K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</label>
-                        <input type="radio" class="form-control" id="question9" name="question9" value="Yes">
-                        <input type="radio" class="form-control" id="question9" name="question9" value="No">
+                        <label>K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</label>
+                        <input type="radio" class="form-control" id="question9yes" name="question9" value="Yes">
+                        <label for="question9yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question9no" name="question9" value="No">
+                        <label for="question9no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question10">Teacher provides the answer to the exit ticket and records the exit ticket data on board.</label>
-                        <input type="radio" class="form-control" id="question10" name="question10" value="Yes">
-                        <input type="radio" class="form-control" id="question10" name="question10" value="No">
+                        <label>Teacher provides the answer to the exit ticket and records the exit ticket data on board.</label>
+                        <input type="radio" class="form-control" id="question10yes" name="question10" value="Yes">
+                        <label for="question10yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question10no" name="question10" value="No">
+                        <label for="question10no">No</label>  
                     </div>
                     <div class="form-group">
-                        <label for="question11">Teachers sort the exit ticket data to analyze trends in the learning.</label>
-                        <input type="radio" class="form-control" id="question11" name="question11" value="Yes">
-                        <input type="radio" class="form-control" id="question11" name="question11" value="No">
+                        <label>Teachers sort the exit ticket data to analyze trends in the learning.</label>
+                        <input type="radio" class="form-control" id="question11yes" name="question11" value="Yes">
+                        <label for="question11yes">Yes</label>  
+                        <input type="radio" class="form-control" id="question11no" name="question11" value="No">
+                        <label for="question11no">No</label>  
                     </div>
-                        <button type="submit" id="next-button">Next</button>
+                        <button id="back-button">Back</button>
+                        <button id="next-button">Next</button>
                 </form>
             </div>
         </div>
@@ -145,7 +168,8 @@
                 </textarea> 
             </div>
 
-            <button type="submit" id="submit-button">Submit</button>
+            <button id="data-button">Back</button>
+            <button id="submit-button">Submit</button>
         </div>
 
     </section>

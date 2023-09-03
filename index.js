@@ -1,6 +1,7 @@
 $(".data").hide();
 $(".accountability").hide();
 $(".summary").hide();
+let data = ''
 
 // $("#teacher").val();
 // $("#grade").val();
@@ -32,6 +33,20 @@ $("#next-button").on("click", function(event) {
     $(".accountability").show();
 });
 
+
+$("#back-button").on("click", function(event) {
+    event.preventDefault();
+    $(".data").hide();
+    $(".start").show();
+});
+
+
+$("#data-button").on("click", function(event) {
+    event.preventDefault();
+    $(".accountability").hide();
+    $(".data").show();
+});
+
 // Click function on submit button click
   $("#submit-button").on("click", function(event) {
     event.preventDefault();
@@ -50,17 +65,17 @@ $("#next-button").on("click", function(event) {
         <p>Portion of the Lesson: ${$("#portion").val()}<p>
     `)
 
-    $("#q1ans").text($("#question1").val());
-    $("#q2ans").text($("#question2").val());
-    $("#q3ans").text($("#question3").val());
-    $("#q4ans").text($("#question4").val());
-    $("#q5ans").text($("#question5").val());
-    $("#q6ans").text($("#question6").val());
-    $("#q7ans").text($("#question7").val());
-    $("#q8ans").text($("#question8").val());
-    $("#q9ans").text($("#question9").val());
-    $("#q10ans").text($("#question10").val());
-    $("#q11ans").text($("#question11").val());
+    $("#q1ans").text($("input[name='question1']:checked").val());
+    $("#q2ans").text($("input[name='question2']:checked").val());
+    $("#q3ans").text($("input[name='question3']:checked").val());
+    $("#q4ans").text($("input[name='question4']:checked").val());
+    $("#q5ans").text($("input[name='question5']:checked").val());
+    $("#q6ans").text($("input[name='question6']:checked").val());
+    $("#q7ans").text($("input[name='question7']:checked").val());
+    $("#q8ans").text($("input[name='question8']:checked").val());
+    $("#q9ans").text($("input[name='question9']:checked").val());
+    $("#q10ans").text($("input[name='question10']:checked").val());
+    $("#q11ans").text($("input[name='question11']:checked").val());
     $("#tgaps").text($("#teacher-gaps").val());
     $("#sconcerns").text($("#student-concerns").val());
 
