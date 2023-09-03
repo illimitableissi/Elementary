@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
 }
 
+
 label {
     text-align: center;
 }
@@ -35,6 +36,13 @@ td {
     flex-direction: column;
 }
 
+.text-label {
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
 .start, .data{
     display: flex;
     width: 80%;
@@ -58,6 +66,8 @@ button {
 .form-control{
     margin: 0 1rem;
     width: 150px;
+    height: 25px;
+    border: 2px solid blue;
 }
 
 .form-group {
