@@ -36,6 +36,8 @@ $("#next-button").on("click", function(event) {
   $("#submit-button").on("click", function(event) {
     event.preventDefault();
 
+    $(".main-title").hide();
+
     $(".accountability").hide();
     $(".summary").show();
 
