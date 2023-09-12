@@ -129,7 +129,6 @@ textarea {
     margin-right: auto;
 }
 
-.summary{}
 
 .main-title {
     text-align: center;
@@ -143,6 +142,13 @@ textarea {
     margin-right: auto;
 }
 
+}
+#summary {
+    background: url("./logo.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 
