@@ -55,6 +55,7 @@ $("#data-button").on("click", function(event) {
 
     $(".accountability").hide();
     $(".summary").show();
+    $("body").css("all", "unset");
 
     // $(".eval-info").append(`
     //     <p>Teacher: ${$("#teacher").val()}<p>
@@ -103,5 +104,17 @@ $("#data-button").on("click", function(event) {
     event.preventDefault();
 
     var element = document.getElementById('summary');
+
+    // var opt = {
+    //     margin:       0,
+    //     filename:     'summary.pdf',
+    //     image:        { type: 'jpeg', quality: 0.98 },
+    //     html2canvas:  { scale: 1 },
+    //     jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+    //   };
+      
+    //   // New Promise-based usage:
+    //   html2pdf().set(opt).from(element).save();
+      
     html2pdf(element);
 });
