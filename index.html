@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Evaluation Form</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 </head>
 <body>
 
@@ -68,8 +66,7 @@
                 <form id="data" name="data">
                     <p class="action-title">Teacher Clarity</p>
                     <div class="form-group">
-                        <label>Teacher explicitly states and unpacks the learning target.</label>
-
+                        <label class="question">Teacher explicitly states and unpacks the learning target.</label>
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button" id="question1yes" name="question1" value="Yes">
                             <label for="question1yes">Yes</label>  
@@ -77,22 +74,23 @@
                             <label for="question1no">No</label>
                             <input type="radio" class="radio-button"  id="question1na" name="question1" value="N/A">
                             <label for="question1na">N/A</label>
+                            <input type="text"  class="form-comment"  id="question1comment" name="question1comment" placeholder="Comment">
                         </div>
                     </div>
                         <div class="form-group">
-                        <label>Teacher models the instructional strategy/anchor chart aligned to the success criteria</label>
-
+                        <label class="question">Teacher models the instructional strategy/anchor chart aligned to the success criteria</label>
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question2yes" name="question2" value="Yes">
                             <label for="question2yes">Yes</label>  
                             <input type="radio" class="radio-button"  id="question2no" name="question2" value="No">
                             <label for="question2no">No</label>
                             <input type="radio" class="radio-button"  id="question2na" name="question2" value="N/A">
-                            <label for="question2na">N/A</label>    
+                            <label for="question2na">N/A</label> 
+                            <input type="text"  class="form-comment"  id="question2comment" name="question2comment" placeholder="Comment">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</label>
+                        <label class="question">Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question3yes" name="question3" value="Yes">
@@ -100,11 +98,12 @@
                             <input type="radio" class="radio-button"  id="question3no" name="question3" value="No">
                             <label for="question3no">No</label>  
                             <input type="radio" class="radio-button"  id="question3na" name="question3" value="N/A">
-                            <label for="question3na">N/A</label> 
+                            <label for="question3na">N/A</label>
+                            <input type="text"  class="form-comment"  id="question3comment" name="question3comment" placeholder="Comment">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Teacher models total physical participation strategies and monitors student engagement at 100%.</label>
+                        <label class="question">Teacher models total physical participation strategies and monitors student engagement at 100%.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question4yes" name="question4" value="Yes">
@@ -113,13 +112,15 @@
                             <label for="question4no">No</label>  
                             <input type="radio" class="radio-button"  id="question4na" name="question4" value="N/A">
                             <label for="question4na">N/A</label> 
+                            <input type="text"  class="form-comment"  id="question4comment" name="question4comment" placeholder="Comment">
+
                         </div>
                     </div>
 
                     <p class="action-title">Student Agency</p>
 
                     <div class="form-group">
-                        <label>Students utilize their “I Made It Tracker: to reflect on the learning for the day</label>
+                        <label class="question">Students utilize their “I Made It Tracker: to reflect on the learning for the day</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question5yes" name="question5" value="Yes">
@@ -128,10 +129,12 @@
                             <label for="question5no">No</label>  
                             <input type="radio" class="radio-button"  id="question5na" name="question5" value="N/A">
                             <label for="question5na">N/A</label>  
+                            <input type="text"  class="form-comment"  id="question5comment" name="question5comment" placeholder="Comment">
+
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>All students complete the exit ticket.</label>
+                        <label class="question">All students complete the exit ticket.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question6yes" name="question6" value="Yes">
@@ -140,10 +143,12 @@
                             <label for="question6no">No</label>  
                             <input type="radio" class="radio-button"  id="question6na" name="question6" value="N/A">
                             <label for="question6na">N/A</label>  
+                            <input type="text"  class="form-comment"  id="question6comment" name="question6comment" placeholder="Comment">
+
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</label>
+                        <label class="question">Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question7yes" name="question7" value="Yes">
@@ -151,14 +156,16 @@
                             <input type="radio" class="radio-button"  id="question7no" name="question7" value="No">
                             <label for="question7no">No</label>  
                             <input type="radio" class="radio-button"  id="question7na" name="question7" value="N/A">
-                            <label for="question7na">N/A</label>  
+                            <label for="question7na">N/A</label> 
+                            <input type="text"  class="form-comment"  id="question7comment" name="question7comment" placeholder="Comment">
+ 
                         </div>
                     </div>
                     
                     <p class="action-title">Assessment Strategy</p>
 
                     <div class="form-group">
-                        <label>Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</label>
+                        <label class="question">Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question8yes" name="question8" value="Yes">
@@ -167,11 +174,13 @@
                             <label for="question8no">No</label>  
                             <input type="radio" class="radio-button"  id="question8na" name="question8" value="N/A">
                             <label for="question8na">N/A</label> 
+                            <input type="text"  class="form-comment"  id="question8comment" name="question8comment" placeholder="Comment">
+
                         </div>
 
                     </div>
                     <div class="form-group">
-                        <label>K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</label>
+                        <label class="question">K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question9yes" name="question9" value="Yes">
@@ -180,10 +189,12 @@
                             <label for="question9no">No</label>  
                             <input type="radio" class="radio-button"  id="question9na" name="question9" value="N/A">
                             <label for="question9na">N/A</label>  
+                            <input type="text"  class="form-comment"  id="question9comment" name="question9comment" placeholder="Comment">
+
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Teacher provides the answer to the exit ticket and records the exit ticket data on board.</label>
+                        <label class="question">Teacher provides the answer to the exit ticket and records the exit ticket data on board.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button"  id="question10yes" name="question10" value="Yes">
@@ -192,10 +203,12 @@
                             <label for="question10no">No</label>  
                             <input type="radio" class="radio-button"  id="question10na" name="question10" value="N/A">
                             <label for="question10na">N/A</label>  
+                            <input type="text"  class="form-comment"  id="question10comment" name="question10comment" placeholder="Comment">
+
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Teachers sort the exit ticket data to analyze trends in the learning.</label>
+                        <label class="question">Teachers sort the exit ticket data to analyze trends in the learning.</label>
 
                         <div class="radio-buttons">
                             <input type="radio" class="radio-button" id="question11yes" name="question11" value="Yes">
@@ -204,6 +217,8 @@
                             <label for="question11no">No</label>  
                             <input type="radio" class="radio-button" id="question11na" name="question11" value="N/A">
                             <label for="question11na">N/A</label> 
+                            <input type="text"  class="form-comment"  id="question11comment" name="question11comment" placeholder="Comment">
+
                         </div>
                     </div>
 
@@ -231,6 +246,7 @@
 
             </div>
 
+
             <div class="row text">
                 <div class="col">
                 <label for="student-concerns">Students of Concern:  List the students of concern that need follow-through/monitoring</label>
@@ -238,6 +254,16 @@
                 <textarea id="student-concerns" name="student-concerns" rows="4" cols="50"></textarea> 
                 </div>
             </div>
+
+            
+            <div class="row text">
+                <div class="col">
+                <label for="teacher-glows">Teacher Glows:</label>
+
+                <textarea id="teacher-glows" name="teacher-glows" rows="4" cols="50"></textarea> 
+            </div>
+
+        </div>
 
             <div class="data-buttons">
                 <button id="data-button" class="button">Back</button>
@@ -250,56 +276,91 @@
     <section class="summary">
         <h1>Teacher Evaluation Summary</h1>
         
-        <div class="eval-info"></div>
+        <table id="summary">
+            <tr>
+                <th>Teacher:</th>
+                <th id="teacher-ans"></th>
+            </tr>
+            <tr>
+                <th>Grade Level:</th>
+                <th id="grade-ans"></th>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <th id="date-ans"></th>
+            </tr>
+            <tr>
+                <th>Observer:</th>
+                <th id="observer-ans"></th>
+            </tr>
+            <tr>
+                <th>Content Observed:</th>
+                <th id="content-ans"></th>
+            </tr>
+            <tr>
+                <th>Portion of the Lession:</th>
+                <th id="portion-ans"></th>
+            </tr>
 
-        <table>
             <tr>
                 <th>Teacher Action</th>
                 <th>Evidence of Practice</th>
+                <th>Comment</th>
             </tr>
             <tr>
                 <td>Teacher explicitly states and unpacks the learning target.</td>
                 <td id="q1ans"></td>
+                <td id="q1comment"></td>
             </tr>
             <tr>
                 <td>Teacher models the instructional strategy/anchor chart aligned to the success criteria</td>
                 <td id="q2ans"></td>
+                <td id="q2comment"></td>
             </tr>
             <tr>
                 <td>Teacher uses attention getter & models the engagement strategy aligned to the success criteria at 100%.</td>
                 <td id="q3ans"></td>
+                <td id="q3comment"></td>
             </tr>
             <tr>
                 <td>Teacher models total physical participation strategies and monitors student engagement at 100%.</td>
                 <td id="q4ans"></td>
+                <td id="q4comment"></td>
             </tr>
             <tr>
                 <td>Students utilize their “I Made It Tracker: to reflect on the learning for the day</td>
                 <td id="q5ans"></td>
+                <td id="q5comment"></td>
             </tr>
             <tr>
                 <td>All students complete the exit ticket.</td>
                 <td id="q6ans"></td>
+                <td id="q6comment"></td>
             </tr>
             <tr>
                 <td>Students refer to anchor charts for the day’s lesson to address misconceptions and  reinforce their learning.</td>
                 <td id="q7ans"></td>
+                <td id="q7comment"></td>
             </tr>
             <tr>
                 <td>Teacher utilizes intentional monitoring protocols, prompting students' correction and marking their papers with feedback during independent practice.</td>
                 <td id="q8ans"></td>
+                <td id="q8comment"></td>
             </tr>
             <tr>
                 <td>K-2 phonics teachers will provide corrective feedback by acknowledging errors, explaining the correct response/ mismatch, and/or repeating question.</td>
                 <td id="q9ans"></td>
+                <td id="q9comment"></td>
             </tr>
             <tr>
                 <td>Teacher provides the answer to the exit ticket and records the exit ticket data on board.</td>
                 <td id="q10ans"></td>
+                <td id="q10comment"></td>
             </tr>
             <tr>
                 <td>Teachers sort the exit ticket data to analyze trends in the learning.</td>
                 <td id="q11ans"></td>
+                <td id="q11comment"></td>
             </tr>
             <tr>
                 <td>Teacher Gaps:</td>
@@ -309,10 +370,23 @@
                 <td>Students of Concern:</td>
                 <td id="sconcerns"></td>
             </tr>
+            <tr>
+                <td>Teacher Glows:</td>
+                <td id="tglows"></td>
+            </tr>
+            <tr>
+                <td>Summary End</td>
+                <td></td>
+            </tr>
         </table>
+
+        <div class="data-buttons">
+            <button id="save-button">Save Summary</button>
+        </div>
     </section>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html> 

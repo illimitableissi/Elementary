@@ -74,6 +74,14 @@ button {
     border: 2px solid blue;
 }
 
+.question {
+    background-color: rgb(236, 236, 236);
+}
+
+.form-comment {
+    margin: 0 1rem;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -83,6 +91,7 @@ button {
 .radio-buttons{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -94,6 +103,7 @@ button {
 
 .action-title {
     text-align: center;
+    font-weight: bold;
 }
 
 .data-buttons {
@@ -115,6 +125,8 @@ button {
 textarea {
     margin: 1rem 0;
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .summary{}
